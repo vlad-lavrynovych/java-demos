@@ -1,0 +1,17 @@
+tacocloud:
+  email:
+  host: imap.tacocloud.com
+  mailbox: INBOX
+  username: taco-in-flow
+  password: 1L0v3T4c0s
+  poll-rate: 10000
+  api:
+    send-url: http://localhost:9999/send-order
+    receive-url: http://localhost:9999/receive-order
+
+server:
+  port: 9999
+
+spring:
+  mvc:
+    log-request-details: true
