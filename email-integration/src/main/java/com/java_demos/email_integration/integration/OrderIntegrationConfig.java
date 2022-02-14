@@ -33,12 +33,12 @@ public class OrderIntegrationConfig {
         log.info("\n ============" + apiProperties);
         return IntegrationFlows
                 .from(Http.inboundChannelAdapter("/send-order")
-                                .requestMapping(r -> r.methods(HttpMethod.POST)
-                                        .consumes("application/json"))
+                        .requestMapping(r -> r.methods(HttpMethod.POST)
+                                .consumes("application/json"))
                         .requestPayloadType(Order.class))
 
                 .transform(order -> {
-                    log.info("\n Received Order from send url: "+ order);
+                    log.info("\n Received Order from send url: " + order);
                     log.info("Will redirect to receive url");
                     return order;
                 })

@@ -5,7 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Data
-@ConfigurationProperties(prefix="tacocloud.email")
+@ConfigurationProperties(prefix = "tacocloud.email")
 @Component
 public class EmailProperties {
 
