@@ -45,6 +45,9 @@ public class ReactorApplication {
     @Bean
     @LoadBalanced
     public WebClient.Builder webClientBuilder() {
+        discoveryClient.getInstances("reactor").forEach((ServiceInstance s) -> {
+            System.out.println(ToStringBuilder.reflectionToString(s));
+        });
         return WebClient.builder();
     }
 
@@ -57,7 +60,7 @@ public class ReactorApplication {
                     .uri("http://localhost:8083/ingredients")
                     .retrieve()
                     .bodyToFlux(Ingredient.class);
-            log.error("Extracted");
+            log.error("Extracting...");
             ingredients.subscribe(s -> log.error(s.getName()));
         };
     }
