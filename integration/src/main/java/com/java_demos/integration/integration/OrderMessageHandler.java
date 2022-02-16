@@ -1,6 +1,6 @@
-package com.java_demos.email_integration.integration;
+package com.java_demos.integration.integration;
 
-import com.java_demos.email_integration.properties.ApiProperties;
+import com.java_demos.integration.properties.ApiProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.integration.handler.GenericHandler;
 import org.springframework.messaging.MessageHeaders;

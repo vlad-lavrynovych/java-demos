@@ -7,22 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="java-demos.integration" />
         <module name="java-demos.feign" />
         <module name="rabbit_mq" />
         <module name="java-demos.reactor" />
         <module name="java-demos.rabbit-mq" />
         <module name="java-demos.eureka" />
         <module name="java-demos.taco_cloud" />
-        <module name="java-demos.email-integration" />
-        <module name="email_integration" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="email_integration" target="11" />
       <module name="java-demos" target="11" />
-      <module name="java-demos.email-integration" target="11" />
       <module name="java-demos.eureka" target="11" />
       <module name="java-demos.feign" target="11" />
+      <module name="java-demos.integration" target="11" />
       <module name="java-demos.rabbit-mq" target="11" />
       <module name="java-demos.reactor" target="11" />
       <module name="java-demos.taco_cloud" target="11" />
@@ -35,6 +33,7 @@
     <file url="file://$PROJECT_DIR$/email-integration" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/integration" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbit-mq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/reactor" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/reactor/feign" charset="UTF-8" />
@@ -48,11 +47,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="email_integration" options="-parameters" />
       <module name="java-demos" options="-parameters" />
-      <module name="java-demos.email-integration" options="-parameters" />
       <module name="java-demos.eureka" options="-parameters" />
       <module name="java-demos.feign" options="-parameters" />
+      <module name="java-demos.integration" options="-parameters" />
       <module name="java-demos.rabbit-mq" options="-parameters" />
       <module name="java-demos.reactor" options="-parameters" />
       <module name="java-demos.taco_cloud" options="-parameters" />
@@ -72,6 +70,7 @@
         <option value="$PROJECT_DIR$/taco_cloud/pom.xml" />
         <option value="$PROJECT_DIR$/eureka/pom.xml" />
         <option value="$PROJECT_DIR$/feign/pom.xml" />
+        <option value="$PROJECT_DIR$/integration/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -203,9 +202,9 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/email-integration/java-demos.email-integration.iml" filepath="$PROJECT_DIR$/email-integration/java-demos.email-integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka/java-demos.eureka.iml" filepath="$PROJECT_DIR$/eureka/java-demos.eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-demos.feign.iml" filepath="$PROJECT_DIR$/java-demos.feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-demos.integration.iml" filepath="$PROJECT_DIR$/java-demos.integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbit-mq/java-demos.rabbit-mq.iml" filepath="$PROJECT_DIR$/rabbit-mq/java-demos.rabbit-mq.iml" />
       <module fileurl="file://$PROJECT_DIR$/reactor/java-demos.reactor.iml" filepath="$PROJECT_DIR$/reactor/java-demos.reactor.iml" />
       <module fileurl="file://$PROJECT_DIR$/taco_cloud/java-demos.taco_cloud.iml" filepath="$PROJECT_DIR$/taco_cloud/java-demos.taco_cloud.iml" />

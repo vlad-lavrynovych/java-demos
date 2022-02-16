@@ -1,7 +1,7 @@
-package com.java_demos.email_integration;
+package com.java_demos.integration;
 
-import com.java_demos.email_integration.integration.Order;
-import com.java_demos.email_integration.properties.ApiProperties;
+import com.java_demos.integration.integration.Order;
+import com.java_demos.integration.properties.ApiProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
@@ -11,10 +11,10 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @Slf4j
-public class EmailIntegrationApplication {
+public class IntegrationApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EmailIntegrationApplication.class, args);
+        SpringApplication.run(IntegrationApplication.class, args);
     }
 
     @Bean

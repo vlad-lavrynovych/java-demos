@@ -1,4 +1,4 @@
-package com.java_demos.email_integration.properties;
+package com.java_demos.integration.properties;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

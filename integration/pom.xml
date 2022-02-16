@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.java_demos</groupId>
-    <artifactId>email_integration</artifactId>
+    <artifactId>integration</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>email_integration</name>
+    <name>integration</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>

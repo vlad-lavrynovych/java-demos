@@ -1,6 +1,6 @@
-package com.java_demos.email_integration.controller;
+package com.java_demos.integration.controller;
 
-import com.java_demos.email_integration.integration.Order;
+import com.java_demos.integration.integration.Order;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

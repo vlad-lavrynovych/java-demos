@@ -1,4 +1,4 @@
-package com.java_demos.email_integration.integration;
+package com.java_demos.integration.integration;
 
 import lombok.*;
 
