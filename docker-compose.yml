@@ -1,0 +1,26 @@
+version: "1.0"
+services:
+  eureka-server:
+    build: ./eureka
+    ports:
+      - "8761:8761"
+    image: vlavrynovych/java-demos_eureka-server
+    container_name: eureka-server
+
+  feign:
+    build: ./feign
+    ports:
+      - "8001:8987"
+    depends_on:
+      - eureka-server
+    image: vlavrynovych/java-demos_feign
+    container_name: feign
+
+  reactor:
+    build: ./reactor
+    ports:
+      - "8002:8083"
+    depends_on:
+      - eureka-server
+    image: vlavrynovych/java-demos_reactor
+    container_name: reactor

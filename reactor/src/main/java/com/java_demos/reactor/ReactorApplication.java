@@ -57,7 +57,7 @@ public class ReactorApplication {
         return (args) -> {
             Flux<Ingredient> ingredients = WebClient.create()
                     .get()
-                    .uri("http://localhost:8083/ingredients")
+                    .uri("http://reactor/ingredients")
                     .retrieve()
                     .bodyToFlux(Ingredient.class);
             log.error("Extracting...");

@@ -18,6 +18,12 @@ public class FeignApplication {
 
 	@Bean
 	public CommandLineRunner feignRequest(IngredientClient client) {
-		return args -> System.out.println(client.getIngredients());
+		return args -> {
+			try {
+				System.out.println(client.getIngredients());
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		};
 	}
 }
