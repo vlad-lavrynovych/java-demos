@@ -7,58 +7,83 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java-demos.feign" />
-        <module name="java-demos.configuration" />
-        <module name="rabbit_mq" />
-        <module name="java-demos.reactor" />
         <module name="java-demos.rabbit-mq" />
-        <module name="java-demos.integration" />
-        <module name="java-demos.taco_cloud" />
+        <module name="java-demos.spring-core" />
+        <module name="java-demos.configuration" />
         <module name="java-demos.eureka" />
+        <module name="java-demos.feign" />
+        <module name="java-demos.taco_cloud" />
+        <module name="java-demos.reactor" />
+        <module name="rabbit_mq" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="java-demos" target="11" />
+      <module name="java-demos" target="1.5" />
       <module name="java-demos.configuration" target="11" />
       <module name="java-demos.eureka" target="11" />
       <module name="java-demos.feign" target="11" />
       <module name="java-demos.integration" target="11" />
       <module name="java-demos.rabbit-mq" target="11" />
       <module name="java-demos.reactor" target="11" />
+      <module name="java-demos.spring-core" target="11" />
       <module name="java-demos.taco_cloud" target="11" />
       <module name="java_demos" target="11" />
       <module name="rabbit_mq" target="11" />
     </bytecodeTargetLevel>
   </component>
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/configuration" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/eureka" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/feign" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/integration" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/rabbit-mq" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/reactor" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/taco_cloud" charset="UTF-8" />
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="postgres@localhost" uuid="30f588b8-761c-44be-a5bc-8372f7b2f1ef">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/configuration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configuration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/integration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/integration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/integration/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbit-mq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbit-mq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reactor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/taco_cloud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/taco_cloud/src/main/java" charset="UTF-8" />
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="InspectionProjectProfileManager">
     <profile version="1.0">
       <option name="myName" value="Project Default" />
+      <inspection_tool class="AutoCloseableResource" enabled="true" level="WARNING" enabled_by_default="true">
+        <option name="METHOD_MATCHER_CONFIG" value="java.util.Formatter,format,java.io.Writer,append,com.google.common.base.Preconditions,checkNotNull,org.hibernate.Session,close,java.io.PrintWriter,printf,java.io.PrintStream,printf,org.hibernate.boot.registry.BootstrapServiceRegistryBuilder,build" />
+      </inspection_tool>
     </profile>
     <version value="1.0" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="java-demos" options="-parameters" />
+      <module name="java-demos" options="" />
       <module name="java-demos.configuration" options="-parameters" />
       <module name="java-demos.eureka" options="-parameters" />
       <module name="java-demos.feign" options="-parameters" />
       <module name="java-demos.integration" options="-parameters" />
       <module name="java-demos.rabbit-mq" options="-parameters" />
       <module name="java-demos.reactor" options="-parameters" />
+      <module name="java-demos.spring-core" options="" />
       <module name="java-demos.taco_cloud" options="-parameters" />
       <module name="java_demos" options="-parameters" />
       <module name="rabbit_mq" options="-parameters" />
     </option>
+  </component>
+  <component name="JpaBuddyIdeaProjectConfig">
+    <option name="defaultUnitInitialized" value="true" />
   </component>
   <component name="Kotlin2JvmCompilerArguments">
     <option name="jvmTarget" value="11" />
@@ -74,6 +99,8 @@
         <option value="$PROJECT_DIR$/feign/pom.xml" />
         <option value="$PROJECT_DIR$/integration/pom.xml" />
         <option value="$PROJECT_DIR$/configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-core/spring-core/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -84,121 +111,121 @@
   </component>
   <component name="Palette2">
     <group name="Swing">
-      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
         <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
       </item>
-      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
         <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
       </item>
-      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
+      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
         <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
       </item>
-      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
+      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
         <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
       </item>
-      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
+      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
         <initial-values>
           <property name="text" value="Button" />
         </initial-values>
       </item>
-      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
+      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
         <initial-values>
           <property name="text" value="RadioButton" />
         </initial-values>
       </item>
-      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
+      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
         <initial-values>
           <property name="text" value="CheckBox" />
         </initial-values>
       </item>
-      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
+      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
         <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
         <initial-values>
           <property name="text" value="Label" />
         </initial-values>
       </item>
-      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
           <preferred-size width="150" height="-1" />
         </default-constraints>
       </item>
-      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
           <preferred-size width="150" height="-1" />
         </default-constraints>
       </item>
-      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
           <preferred-size width="150" height="-1" />
         </default-constraints>
       </item>
-      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
+      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
           <preferred-size width="150" height="50" />
         </default-constraints>
       </item>
-      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
           <preferred-size width="150" height="50" />
         </default-constraints>
       </item>
-      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
           <preferred-size width="150" height="50" />
         </default-constraints>
       </item>
-      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
+      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
       </item>
-      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
+      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
           <preferred-size width="150" height="50" />
         </default-constraints>
       </item>
-      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
+      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
           <preferred-size width="150" height="50" />
         </default-constraints>
       </item>
-      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
+      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
           <preferred-size width="150" height="50" />
         </default-constraints>
       </item>
-      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
+      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
           <preferred-size width="200" height="200" />
         </default-constraints>
       </item>
-      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
+      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
         <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
           <preferred-size width="200" height="200" />
         </default-constraints>
       </item>
-      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
+      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
         <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
       </item>
-      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
+      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
       </item>
-      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
         <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
       </item>
-      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
       </item>
-      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
+      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
         <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
           <preferred-size width="-1" height="20" />
         </default-constraints>
       </item>
-      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
         <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
       </item>
-      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
       </item>
     </group>
@@ -211,14 +238,56 @@
       <module fileurl="file://$PROJECT_DIR$/java-demos.integration.iml" filepath="$PROJECT_DIR$/java-demos.integration.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbit-mq/java-demos.rabbit-mq.iml" filepath="$PROJECT_DIR$/rabbit-mq/java-demos.rabbit-mq.iml" />
       <module fileurl="file://$PROJECT_DIR$/reactor/java-demos.reactor.iml" filepath="$PROJECT_DIR$/reactor/java-demos.reactor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-demos.spring-core.iml" filepath="$PROJECT_DIR$/java-demos.spring-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/taco_cloud/java-demos.taco_cloud.iml" filepath="$PROJECT_DIR$/taco_cloud/java-demos.taco_cloud.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11.0.4" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="12" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+  </component>
+  <component name="dataSourceStorageLocal" created-in="IU-221.5921.22">
+    <data-source name="postgres@localhost" uuid="30f588b8-761c-44be-a5bc-8372f7b2f1ef">
+      <database-info product="PostgreSQL" version="11.2" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.3.3" dbms="POSTGRES" exact-version="11.2" exact-driver-version="42.3">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="database">
+            <name qname="demo-db" />
+            <name qname="demo_db" />
+            <name qname="luxoftTest" />
+            <name qname="rest_for_sheva" />
+            <node kind="schema" qname="@" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
   </component>
   <component name="libraryTable">
     <library name="Maven: antlr:antlr:2.7.7">
@@ -540,6 +609,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: com.sun.activation:jakarta.activation:2.0.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: com.sun.istack:istack-commons-runtime:3.0.12">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar!/" />
@@ -549,6 +629,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.sun.istack:istack-commons-runtime:4.0.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/istack/istack-commons-runtime/4.0.1/istack-commons-runtime-4.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/istack/istack-commons-runtime/4.0.1/istack-commons-runtime-4.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/sun/istack/istack-commons-runtime/4.0.1/istack-commons-runtime-4.0.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.sun.jersey.contribs:jersey-apache-client4:1.19.1">
@@ -637,6 +728,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: commons-codec:commons-codec:1.11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.11/commons-codec-1.11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.11/commons-codec-1.11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.11/commons-codec-1.11-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: commons-codec:commons-codec:1.15">
@@ -1101,6 +1203,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: jakarta.inject:jakarta.inject-api:2.0.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: jakarta.persistence:jakarta.persistence-api:2.2.3">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar!/" />
@@ -1112,6 +1225,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: jakarta.persistence:jakarta.persistence-api:3.0.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/3.0.0/jakarta.persistence-api-3.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/3.0.0/jakarta.persistence-api-3.0.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/persistence/jakarta.persistence-api/3.0.0/jakarta.persistence-api-3.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: jakarta.transaction:jakarta.transaction-api:1.3.3">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar!/" />
@@ -1121,6 +1245,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jakarta.transaction:jakarta.transaction-api:2.0.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/transaction/jakarta.transaction-api/2.0.0/jakarta.transaction-api-2.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/transaction/jakarta.transaction-api/2.0.0/jakarta.transaction-api-2.0.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/transaction/jakarta.transaction-api/2.0.0/jakarta.transaction-api-2.0.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: jakarta.validation:jakarta.validation-api:2.0.2">
@@ -1143,6 +1278,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:3.0.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: javax.activation:activation:1.1">
@@ -1233,6 +1379,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.11.22/byte-buddy-1.11.22-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: net.bytebuddy:byte-buddy:1.12.9">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.12.9/byte-buddy-1.12.9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.12.9/byte-buddy-1.12.9-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.12.9/byte-buddy-1.12.9-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: net.minidev:accessors-smart:2.4.7">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/net/minidev/accessors-smart/2.4.7/accessors-smart-2.4.7.jar!/" />
@@ -1266,6 +1423,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.antlr:antlr4-runtime:4.10">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.10/antlr4-runtime-4.10.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.10/antlr4-runtime-4.10-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.10/antlr4-runtime-4.10-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.antlr:stringtemplate:3.2.1">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.jar!/" />
@@ -1297,6 +1465,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.httpcomponents:httpcore:4.4.14">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.14/httpcore-4.4.14-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.apache.httpcomponents:httpcore:4.4.15">
@@ -1442,6 +1621,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk15on/1.68/bcprov-jdk15on-1.68-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.checkerframework:checker-qual:3.5.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.codehaus.jettison:jettison:1.4.0">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jettison/jettison/1.4.0/jettison-1.4.0.jar!/" />
@@ -1508,6 +1698,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.31/freemarker-2.3.31-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.glassfish.jaxb:jaxb-core:3.0.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-core/3.0.2/jaxb-core-3.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-core/3.0.2/jaxb-core-3.0.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-core/3.0.2/jaxb-core-3.0.2-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.glassfish.jaxb:jaxb-runtime:2.3.5">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5.jar!/" />
@@ -1519,6 +1720,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-runtime/2.3.5/jaxb-runtime-2.3.5-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.glassfish.jaxb:jaxb-runtime:3.0.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-runtime/3.0.2/jaxb-runtime-3.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-runtime/3.0.2/jaxb-runtime-3.0.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/jaxb-runtime/3.0.2/jaxb-runtime-3.0.2-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.glassfish.jaxb:txw2:2.3.5">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5.jar!/" />
@@ -1528,6 +1740,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/txw2/2.3.5/txw2-2.3.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.glassfish.jaxb:txw2:3.0.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/txw2/3.0.2/txw2-3.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/txw2/3.0.2/txw2-3.0.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/glassfish/jaxb/txw2/3.0.2/txw2-3.0.2-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.hamcrest:hamcrest-core:2.2">
@@ -1583,6 +1806,28 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate.common:hibernate-commons-annotations:6.0.2.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/6.0.2.Final/hibernate-commons-annotations-6.0.2.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/6.0.2.Final/hibernate-commons-annotations-6.0.2.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/6.0.2.Final/hibernate-commons-annotations-6.0.2.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate.orm:hibernate-core:6.1.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/orm/hibernate-core/6.1.0.Final/hibernate-core-6.1.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/orm/hibernate-core/6.1.0.Final/hibernate-core-6.1.0.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/orm/hibernate-core/6.1.0.Final/hibernate-core-6.1.0.Final-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.hibernate.validator:hibernate-validator:6.2.0.Final">
@@ -1827,6 +2072,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/9.1/asm-9.1-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.postgresql:postgresql:42.4.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.4.0/postgresql-42.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.4.0/postgresql-42.4.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.4.0/postgresql-42.4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.projectlombok:lombok:1.18.22">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar!/" />
@@ -1869,6 +2125,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jul-to-slf4j/1.7.33/jul-to-slf4j-1.7.33-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.7.30">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.slf4j:slf4j-api:1.7.33">
@@ -2100,6 +2367,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-reactor-netty/2.6.3/spring-boot-starter-reactor-netty-2.6.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-security:2.6.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-security/2.6.3/spring-boot-starter-security-2.6.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-security/2.6.3/spring-boot-starter-security-2.6.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-security/2.6.3/spring-boot-starter-security-2.6.3-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework.boot:spring-boot-starter-test:2.6.3">
@@ -2542,6 +2820,28 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/retry/spring-retry/1.3.1/spring-retry-1.3.1-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework.security:spring-security-config:5.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.6.1/spring-security-config-5.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.6.1/spring-security-config-5.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.6.1/spring-security-config-5.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.security:spring-security-core:5.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.6.1/spring-security-core-5.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.6.1/spring-security-core-5.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.6.1/spring-security-core-5.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework.security:spring-security-crypto:5.6.1">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-crypto/5.6.1/spring-security-crypto-5.6.1.jar!/" />
@@ -2564,6 +2864,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-rsa/1.0.10.RELEASE/spring-security-rsa-1.0.10.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework.security:spring-security-web:5.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.6.1/spring-security-web-5.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.6.1/spring-security-web-5.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.6.1/spring-security-web-5.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-aop:5.3.15">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.3.15/spring-aop-5.3.15.jar!/" />
@@ -2573,6 +2884,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.3.15/spring-aop-5.3.15-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-aop:5.3.21">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.3.21/spring-aop-5.3.21.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.3.21/spring-aop-5.3.21-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.3.21/spring-aop-5.3.21-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework:spring-aspects:5.3.15">
@@ -2597,6 +2919,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.15/spring-beans-5.3.15-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework:spring-beans:5.3.21">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.21/spring-beans-5.3.21.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.21/spring-beans-5.3.21-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.3.21/spring-beans-5.3.21-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-context-support:5.3.15">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.3.15/spring-context-support-5.3.15.jar!/" />
@@ -2619,6 +2952,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.15/spring-context-5.3.15-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework:spring-context:5.3.21">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.21/spring-context-5.3.21.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.21/spring-context-5.3.21-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.3.21/spring-context-5.3.21-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-core:5.3.15">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.3.15/spring-core-5.3.15.jar!/" />
@@ -2628,6 +2972,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.3.15/spring-core-5.3.15-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-core:5.3.21">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.3.21/spring-core-5.3.21.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.3.21/spring-core-5.3.21-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.3.21/spring-core-5.3.21-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework:spring-expression:5.3.15">
@@ -2641,6 +2996,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/5.3.15/spring-expression-5.3.15-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework:spring-expression:5.3.21">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/5.3.21/spring-expression-5.3.21.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/5.3.21/spring-expression-5.3.21-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/5.3.21/spring-expression-5.3.21-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-jcl:5.3.15">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jcl/5.3.15/spring-jcl-5.3.15.jar!/" />
@@ -2650,6 +3016,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jcl/5.3.15/spring-jcl-5.3.15-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-jcl:5.3.21">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jcl/5.3.21/spring-jcl-5.3.21.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jcl/5.3.21/spring-jcl-5.3.21-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jcl/5.3.21/spring-jcl-5.3.21-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework:spring-jdbc:5.3.15">

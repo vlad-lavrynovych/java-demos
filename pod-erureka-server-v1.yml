@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: eureka-server
+  labels:
+    env: dev
+    app: main
+    tier: server
+    owner: Owner
+spec:
+  containers:
+    - name : eureka-server
+      image: vlavrynovych/java-demos_eureka-server
+      ports:
+        - containerPort: 8761
